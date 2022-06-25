@@ -2,7 +2,7 @@
   "name": "18-nosql",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "A full stack application using MongoDB that acts as a pizza social media platform",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -12,6 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "mongodb": "^4.7.0",
     "mongoose": "^6.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Tulmen/pizza-hunt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Michael-Tulmen/pizza-hunt/issues"
+  },
+  "homepage": "https://github.com/Michael-Tulmen/pizza-hunt#readme"
 }

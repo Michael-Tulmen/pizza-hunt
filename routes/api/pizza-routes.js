@@ -1,17 +1,16 @@
-const router = require('express').Router();
-
+const router = require("express").Router();
+const {
+  getAllPizza,
+  getPizzaById,
+  createPizza,
+  updatePizza,
+  deletePizza,
+} = require("../../controllers/pizza-controller");
 //Set up GET ALL and POST at /api/pizzas
-router
-    .route('/')
-    .get()
-    .post();
+router.route("/").get(getAllPizza).post(createPizza);
 
 //Set up GET ONE, PUT, and DELETE at /api/pizzas/:id
 
-router
-    .route('/:id')
-    .get()
-    .put()
-    .delete();
+router.route("/:id").get(getPizzaById).put(updatePizza).delete(deletePizza);
 
 module.exports = router;
